@@ -1,0 +1,69 @@
+G. AUTOMATED SEGREGATION MACHINES / ROBOTIC ARMS (prototypes, mostly general waste)
+Topic: Robotic-arm + conveyor + multi-sensor segregation (recurring prototype architecture)
+
+Finding: Multiple student/academic prototypes use a common architecture: IR sensor to detect waste, robotic arm to pick/place onto a conveyor, moisture sensor (wet waste), inductive proximity sensor (metal), ultrasonic sensor (bin level), servo motors to deflect into bins, LCD for status. Categories typically dry/wet/metallic.
+Sources: ResearchGate/IJCRT (2021, 2024), IJERT (2021), IJRASET, Technoarete (IJSEM), IEEE Xplore, Academia.edu (2017)
+URLs: https://www.researchgate.net/publication/380663735_... ; https://ijcrt.org/papers/IJCRT2107532.pdf ; https://www.ijert.org/automated-waste-sorter-with-robotic-arm-using-arduino-uno ; https://www.ijraset.com/research-paper/automatic-waste-segregation ; https://ieeexplore.ieee.org/document/9012120/ ; https://www.technoarete.org/common_abstract/pdf/IJSEM/v7/i1/Ext_03468.pdf
+Why relevant: Shows the standard low-cost sensor/actuator stack for segregation — useful for component selection and for showing what's already common at prototype level.
+Limitations: These segregate general waste (dry/wet/metal), NOT biomedical categories. Mostly low-rigor student journals; treat performance claims cautiously. Sensor-based (not vision-based) approaches cannot distinguish infectious vs non-infectious.
+Topic: ConvoWaste — automatic waste segregation machine
+
+Finding: Conference paper (3rd ICREST'23) on "ConvoWaste," an automatic waste segregation machine (deep-learning based).
+Source: arXiv
+URL: https://arxiv.org/pdf/2302.02976
+Date: 2023
+Why relevant: Another named prototype for comparison.
+Limitations: Verify categories, accuracy, and whether medical waste is covered (likely general waste).
+Topic: Smart Bin — biomedical waste segregation (CNN, 4 material classes)
+
+Finding: Paper "Smart Bin: Biomedical Waste Segregation and Management" segregates into four classes (metal, glass, paper, plastic) using a CNN.
+Source: IOSR-JEN (conference series ACCET-2021)
+URL: https://iosrjen.org/Papers/ACCET-2021/Series-1/10,%2059-65.pdf
+Date: 2021
+Why relevant: Uses "biomedical" framing but note the classes are material-based, not BMW hazard categories.
+Limitations: Low-tier journal; segregation by material ≠ BMW colour categories. Verify.
+H. COMMERCIAL ROBOTIC WASTE SORTING (industrial, general/recycling — not medical)
+Topic: ZenRobotics (Terex) — commercial AI waste-sorting robots
+
+Finding: ZenRobotics (Finnish, founded 2007; now a Terex brand) sells AI-based robotic waste-sorting systems; launched "ZenRobotics 4.0" (Feb 2024) with Heavy Picker 4.0 (bulky) and Fast Picker 4.0 (lightweight); one facility (Remeo) featured 12 robotic arms.
+Sources: Terex/ZenRobotics site; Recycling Today; RecyclingInside; market.us
+URLs: https://www.terex.com/zenrobotics ; https://www.recyclingtoday.com/news/zenrobotics-launches-fourth-generation-waste-sorting-robots/ ; https://recyclinginside.com/...
+Why relevant: State-of-the-art commercial robotic sorting — a benchmark for what "commercially available" looks like (though for recycling/MRF, not hospitals).
+Limitations: These are large fixed industrial installations for recyclables/C&D waste, NOT mobile hospital biomedical systems. Do not claim medical-waste capability.
+Topic: AMP Robotics — throughput claims
+
+Finding: AMP Robotics reports its AI-powered robots can sort ~80 items/minute (vs ~35 by a human worker); one source cites "up to 6,000 pieces per hour."
+Sources: Recycling Today (blog); University of Colorado Boulder Environmental Center
+URLs: https://www.recyclingtoday.org/blogs/news/... ; https://www.colorado.edu/ecenter/2022/04/06/ai-robotics-recycling
+Why relevant: Throughput/efficiency benchmark for AI sorting vs manual.
+Limitations: Vendor-reported figures via secondary sources; recycling context, not medical. Verify against primary AMP sources.
+Topic: Robotic waste-sorting market size
+
+Finding: Market reports estimate the robotic waste-sorting market at ~USD 2.84B (2025) growing at ~18.6% CAGR to ~USD 6.66B by 2030 (Mordor Intelligence); another (market.us) cites ~15.4% CAGR. Named players: Machinex, AMP Robotics, ZenRobotics, Sadako Technologies.
+Sources: Mordor Intelligence; market.us
+URLs: https://www.mordorintelligence.com/industry-reports/robotic-waste-sorting-system-market ; https://market.us/report/robotic-waste-sorting-market/
+Why relevant: Market/scalability context.
+Limitations: Commercial market-research figures vary between firms and are estimates; general robotic sorting, not medical-specific. Cite as "per [firm], estimated."
+I. AUTONOMOUS MOBILE ROBOTS / HOSPITAL ROBOTS / NAVIGATION
+Topic: Aethon TUG — commercial hospital transport robot (incl. waste)
+
+Finding: The TUG autonomous mobile robot by Aethon is designed to transport soiled linens, waste, and supplies within healthcare facilities. Aethon describes lidar-based localization and obstacle detection/avoidance as central to its navigation.
+Sources: Iceco Robotics blog; Aethon
+URLs: https://icecobotics.com/blog/robotic-technology-cleaning-trends-for-heatlhcare-facilities-2023 ; https://aethon.com/our-navigation-methodology-explained/
+Date: 2023/2024
+Why relevant: A commercially deployed hospital AMR that already transports waste — closest existing commercial analogue to the "mobile" + "hospital" part of your PS (though it transports, it doesn't classify/segregate).
+Limitations: TUG transports, it does not do AI classification, segregation, disinfection, or packing. Verify current capabilities from Aethon directly.
+Topic: Autonomous UV-C disinfection robots (hospital)
+
+Finding: Multiple sources describe autonomous mobile robots with UV-C lamps for hospital disinfection. A POSTECH (South Korea) research robot uses dual disinfection: a robotic manipulator to physically wipe surfaces plus UV-C for hard-to-reach areas. OMRON fits LD-series AMRs with UV-C lamps (programmable routes/times). An arXiv paper reports optimized UV-dosage reducing disinfection time by ~30.7% and 31.9% in two hospital scenarios.
+Sources: EurekAlert!/TechXplore/ScienceDaily (POSTECH, May 2025); OMRON; arXiv (Jul 2025); European Journal of EE & CS (2022)
+URLs: https://techxplore.com/news/2025-05-hospital-sanitation-autonomous-robots-uv.html ; https://www.omron.com/global/en/edge-link/news/486.html ; https://arxiv.org/html/2507.11270v1 ; https://eu-opensci.org/index.php/ejece/article/view/19383
+Why relevant: Directly informs the "disinfection" module of your system and shows UV-C is an established autonomous-robot disinfection method (with quantified time savings in one study).
+Limitations: These disinfect surfaces/rooms, not waste inside a container. Whether UV-C is sufficient for disinfecting biomedical waste (vs surfaces) is a different question — not supported by these sources. Verify dosage claims in the arXiv full text.
+Topic: Indoor AMR/AGV navigation — SLAM, LiDAR, sensor fusion
+
+Finding: Reviews and papers cover LiDAR-based SLAM for indoor navigation, 2D vs 3D LiDAR trade-offs, sensor fusion (LiDAR + vision + ultrasonic) for obstacle detection and depth, and AGV battery-charging considerations.
+Sources: PMC review (sensing technologies for indoor AMRs); arXiv "LiDAR-based SLAM... state of the art"; ScienceDirect (AI-based indoor localization review, Feb 2025); Clemson open textbook; ResearchGate (LiDAR mapping/navigation)
+URLs: https://pmc.ncbi.nlm.nih.gov/articles/PMC10893033/ ; https://arxiv.org/pdf/2311.00276 ; https://www.sciencedirect.com/science/article/pii/S2215098625000321 ; https://opentextbooks.clemson.edu/wangrobotics/chapter/mobile-robot-navigation-system/
+Why relevant: Technical foundation for the autonomous-mobility part of your system (navigation, obstacle avoidance, mapping).
+Limitations: General robotics literature, not hospital-waste-specific. Use for component/algorithm selection background.

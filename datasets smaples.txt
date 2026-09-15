@@ -1,0 +1,22 @@
+F. DATASETS (relevant for training an AI classifier)
+Topic: TrashBox dataset (includes a medical waste class)
+
+Finding: TrashBox contains 17,785 waste-object images across seven classes (glass, plastic, metal, e-waste, cardboard, paper, medical waste), with subclasses; notable for including medical and e-waste classes "not included in any other existing dataset."
+Sources: GitHub (nikhilvenkatkumsetty), IEEE DataPort, HALE Lab @ NITK
+URLs: https://github.com/nikhilvenkatkumsetty/TrashBox ; https://ieee-dataport.org/documents/trashbox ; https://halelabnitk.github.io/datasets.html
+Why relevant: One of the few public datasets with a dedicated medical-waste class; Indian academic origin (NITK).
+Limitations: "Medical waste" here is a general class — check whether subclasses match India's Yellow/Red/White/Blue categories (they likely do not). Verify licensing and image quality/realism.
+Topic: TrashNet, TACO, and other benchmarks (general waste)
+
+Finding: TrashNet (~2,000+ images, 6 material classes: glass, paper, metal, plastic, cardboard, trash) is a common benchmark but "lacks class diversity"; TACO focuses on litter in natural environments with instance-level annotations across dozens of classes; UAVVaste, AquaTrash, VN-trash also exist with noted shortcomings (small size or specific environments).
+Sources: GitHub waste-datasets-review (AgaMiko); arXiv "Garbage Dataset (GD)"; Stanford CS231n paper; ScienceDirect (optimized CNN); Kaggle TACO
+URLs: https://github.com/AgaMiko/waste-datasets-review ; https://arxiv.org/html/2602.10500v2 ; https://cs231n.stanford.edu/2025/papers/text_file_840523213-CS_231N_Final_Paper.pdf ; https://www.kaggle.com/datasets/kneroma/tacotrashdataset
+Why relevant: Establishes the dataset landscape and its limitations (a key research gap: no large, realistic, India-BMW-category-specific dataset).
+Limitations: These are general recycling datasets, NOT biomedical-waste-category datasets. The arXiv "GD" paper is future-dated (2602/2026) — dating unreliable. The AgaMiko repo is a useful curated index to explore further.
+Topic: Medical waste object-detection dataset (YOLO, 8 object types)
+
+Finding: A GitHub project trained YOLOv2 on 1,500+ images to detect 8 medical-waste object types (syringe, blooded cotton, vial, IV tubes, etc.).
+Source: GitHub (manjunathsept11)
+URL: https://github.com/manjunathsept11/Medical-Waste-Object-Detection-Using-YOLO
+Why relevant: Example of item-level medical-waste detection classes and a small dataset you could learn from.
+Limitations: Small dataset, older YOLO version, individual project (not peer-reviewed). Verify data availability and quality.

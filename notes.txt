@@ -1,0 +1,14 @@
+14. Points Requiring Verification for further Field Study
+•	Confirm which waste categories are suitable for autoclave treatment and which require other treatment routes.
+•	Record the packing materials and whether packing covers are actually reusable after disinfection.
+•	Understand the exact CTF receiving process after hospital collection.
+•	Verify the downstream treatment-facility workflow before designing the treatment-facility extension.
+•	Separate direct hospital observations from information obtained from reports, websites or secondary references.
+15. Recommended Research Methodology
+•	Observe first and avoid leading hospital staff toward the proposed solution.
+•	Record the existing workflow as it actually occurs.
+•	Keep each hospital's observations separate until comparison is complete.
+•	Compare hospitals to identify repeated problems and process variations.
+•	Convert repeated observations into system requirements.
+•	Only after validation, finalize sensors, mechanical components and software features.
+•	Prototype the hospital-side system first, then evaluate the need for a downstream treatment-facility extension.

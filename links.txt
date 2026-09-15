@@ -1,0 +1,90 @@
+Sources (multiple, cross-referenced):
+1.CPCB "Guidelines for management of healthcare waste" (June 2018 PDF): https://cpcb.nic.in/uploads/projects/bio-medical-waste/guidelines_healthcare_june_2018.pdf
+2.Asian Journal of Nursing Education and Research (2018): https://ajner.com/HTML_Papers/Asian%20Journal%20of%20Nursing%20Education%20and%20Research__PID__2018-8-2-24.html
+3.EVS Institute (secondary): https://evs.institute/environmental-legislations/managing-biomedical-waste-india-rules-disposal/
+
+
+Source: CPCB — "Guidelines for Bar Code System for Effective Management of Bio-medical Waste" (PDF)
+URL: https://www.cpcb.nic.in/uploads/Projects/Bio-Medical-Waste/Guidelines_for_Bar_Code_System_for_HCFs_and_CBWTFs.pdf
+
+
+Finding: CPCB maintains an annual reports listing page.
+Source: CPCB
+URL: https://cpcb.nic.in/annual-report.php
+
+Finding: WHO's second-edition handbook ("Blue Book") provides comprehensive guidance on safe, sustainable, affordable healthcare waste management, including updated guidance on environmentally sustainable treatment technologies and planning waste-management systems.
+Source: World Health Organization
+URLs: https://www.who.int/publications/i/item/9789241548564 ; full PDF: https://apps.who.int/iris/bitstream/handle/10665/85349/9789241548564_eng.pdf
+Date: 2nd edition (WHO IRIS listing shows 2014)
+
+E. AI / COMPUTER VISION FOR WASTE CLASSIFICATION (research/prototype)
+Topic: Hybrid deep-learning ensemble for biomedical waste classification ("BioSorter")
+
+Finding: Paper proposes "BioSorter," described as a real-time, deployable AI system combining heterogeneous deep-learning models with physical sorting, using deep learning + reinforcement learning + differential evolution; contrasts itself with prior "standalone classifiers or laboratory-based sorting prototypes."
+Source: ScienceDirect, Waste Management journal
+URL: https://www.sciencedirect.com/science/article/abs/pii/S0956053X2500621X
+Date: Listed Oct 27, 2025
+Why relevant: A recent, directly on-topic system combining AI classification with physical segregation — good for "state of the art" and for identifying what your system must exceed.
+Limitations: Abstract only (paywalled). Accuracy/throughput claims not verified. Confirm publication date and whether it's a real deployment or lab prototype.
+Topic: Deep-learning approach for medical waste classification + AI-enhanced LCA framework
+
+Finding: Paper outlines a deep-learning approach and an AI-enhanced life-cycle-assessment (LCA) framework covering generation, segregation, transport, treatment, disposal.
+Source: ResearchGate (PDF listing)
+URL: https://www.researchgate.net/publication/358489974_A_deep_learning_approach_for_medical_waste_classification
+Date: Feb 20, 2022
+Why relevant: Covers the full lifecycle, not just classification.
+Limitations: Verify authorship, venue, and results in the actual paper.
+Topic: ML-based cyber-physical hospital waste segregation system
+
+Finding: Study proposes a machine-learning-based cyber-physical framework for smart hospital waste segregation aimed at worker safety and resource efficiency.
+Source: ScienceDirect (Procedia CIRP, per URL pattern)
+URL: https://www.sciencedirect.com/science/article/pii/S2212827126005275
+Date: Listed May 30, 2026 (⚠️ future date — dating unreliable, verify)
+Why relevant: Directly matches "hospital waste segregation + cyber-physical + worker safety" theme of your PS.
+Limitations: Future-dated in results; may be an in-press/preprint. Verify existence, venue, and findings.
+Topic: CNN-based waste segregation method (foundational technique reference)
+
+Finding: arXiv paper on waste segregation using CNNs; references prior work using ResNet-50 transfer learning on small datasets achieving ~87% accuracy on 4 categories (glass, paper, plastic, [metal]), using TrashNet.
+Source: arXiv (Jash Shah et al.)
+URL: https://arxiv.org/pdf/2202.12258
+Date: 2022
+Why relevant: Baseline CNN/transfer-learning techniques and typical accuracy ranges.
+Limitations: The 87% figure is cited from a referenced study, not necessarily this paper's own result — read carefully. General waste, not biomedical-specific.
+Topic: Multi-class waste segregation with computer vision + robotic arm (working prototype with quantified success rate)
+
+Finding: Prototype using custom fine-tuned YOLOv5 + a 3D-printed robotic arm; reported that the final prototype "could classify and drop test waste items 80% successfully into their respective containers."
+Sources: PeerJ Computer Science (peer-reviewed, open access) and ResearchGate
+URLs: https://peerj.com/articles/cs-1957/ ; PDF: https://peerj.com/articles/cs-1957.pdf ; https://www.researchgate.net/publication/380496645_...
+Date: Published May 10, 2024
+Why relevant: Concrete, recent, peer-reviewed prototype with a stated success rate and a 3D-printed arm — comparable scope to your mechanical/AI ambition; also references an earlier "Recyclebot."
+Limitations: 80% success is for dry-waste categories in a test setup, NOT biomedical waste. Open-access full text available — read for methodology and honest limitations.
+Topic: COVID medical waste segregation robot using YOLOv5
+
+Finding: Conference paper proposing a medical waste segregation robot using YOLOv5 image-processing/object detection to handle waste autonomously without direct human contact (motivated by COVID contagion risk to waste workers).
+Source: AIP Conference Proceedings (Aman Kumar Masih, P. Kingston Stanley)
+URLs: https://pubs.aip.org/aip/acp/article/2670/1/030006/2832211/... ; PDF: https://pubs.aip.org/aip/acp/article-pdf/doi/10.1063/5.0117452/...
+Date: Dec 5, 2022
+Why relevant: Very close to your PS (medical waste + robot + reducing human exposure). Indian authors (Kingston Stanley is associated with VIT).
+Limitations: Conference paper — verify performance results and whether it was built or only proposed.
+Topic: Medical waste sorting machine with IoT + YOLO
+
+Finding: Paper on developing a medical waste sorting machine using IoT and a YOLO model; references prior YOLOv5-on-Raspberry-Pi COVID waste classification work.
+Source: Journal of Engineering and Applied Science (Springer)
+URL: https://link.springer.com/article/10.1186/s44147-025-00661-5
+Date: June 17, 2025
+Why relevant: Combines the sorting machine + IoT + YOLO elements central to your PS.
+Limitations: Read full text for hardware details, accuracy, and limitations.
+Topic: Lightweight DL for sorting medical waste (embedded)
+
+Finding: Paper on a lightweight deep-learning algorithm for sorting medical waste in an embedded system; discusses benchmarking on TACO with Mask R-CNN/ResNet-50.
+Source: Journal of Internet Technology (NDHU)
+URL: https://jit.ndhu.edu.tw/article/viewFile/3093/3117
+Why relevant: Addresses the embedded/edge constraint relevant to an onboard mobile robot.
+Limitations: Verify metrics; confirm it's medical-waste-specific.
+Topic: XAI + vehicle-routing for smart-city medical waste
+
+Finding: Paper on a medical waste management system in a smart city using explainable AI (XAI) and vehicle-routing optimization; references sensor-based (proximity, humidity, gas, ultrasonic) waste segregators.
+Source: PMC
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10624954/
+Why relevant: Routing optimization + digital tracking angle; sensor fusion for identification.
+Limitations: Read full text; the sensor description is from cited works, not necessarily the paper's own build.

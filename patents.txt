@@ -1,0 +1,36 @@
+L. PATENTS
+Topic: Automated waste sorting system (medical waste)
+
+Finding: Patent describes a system for disposing of medical waste, "generally configured to sort waste items into a plurality of containers according to applicable rules and regulations," comprising sorting stations.
+Source: Google Patents — US8560460B2
+URL: https://patents.google.com/patent/US8560460B2/en
+Why relevant: Prior art directly on automated medical-waste sorting into rule-based containers.
+Limitations: Read claims for scope; check legal status (granted/expired/assignee). US jurisdiction.
+Topic: Medical waste sorting system with sensing capabilities
+
+Finding: Patent for a medical-waste sorting mechanism including apparatus to receive a waste item from a user and physically convey it to the appropriate container, with sensing.
+Source: Google Patents — US20060218002A1
+URL: https://patents.google.com/patent/US20060218002A1/en
+Why relevant: Prior art on sensor-based medical waste sorting + conveyance.
+Limitations: Application publication (check if granted). Read claims.
+Topic: Medical waste segregation apparatus with moveable floor
+
+Finding: Patent for a medical-waste segregation apparatus/method to segregate at the point of disposal within a facility, in preparation for further segregated disposal.
+Source: Google Patents — US20020027140A1
+URL: https://patents.google.com/patent/US20020027140A1/en
+Why relevant: Point-of-disposal segregation prior art.
+Limitations: Older; check legal status. Read claims.
+Topic: Automatic sorting of waste (general)
+
+Finding: Patent on automatic sorting of waste (classification code Y02W30/10 covers waste collection/transport incl. segregated collection and electric/hybrid propulsion).
+Source: Google Patents — US11104512B2
+URL: https://patents.google.com/patent/US11104512B2/fr
+Why relevant: The Y02W30/10 classification note is a useful pointer for finding related patents (segregated collection + electric propulsion, relevant to your battery-electric mobile system).
+Limitations: General waste. Use the CPC code to search more prior art.
+Topic: Waste segregation via machine learning (patent)
+
+Finding: Innovation patent for a waste-segregation method using machine learning (segregates organic vs inorganic once collected by the bin).
+Source: Google Patents — AU2021101744A4
+URL: https://patents.google.com/patent/AU2021101744A4/en
+Why relevant: ML-based segregation prior art.
+Limitations: Australian "innovation patent" (a now-phased-out, lower-bar right) — verify status; general waste, not medical.

@@ -1,0 +1,8 @@
+N. EDGE-AI HARDWARE FOR ONBOARD DEPLOYMENT
+Topic: YOLO on edge devices (Raspberry Pi / Jetson) — feasibility & trade-offs
+
+Findings: Benchmarks and guides cover deploying YOLOv8/YOLOv11 and other detectors (EfficientDet-Lite, SSD-MobileNet) on Raspberry Pi 3/4/5 (with/without TPU/Hailo/AI HAT+) and Jetson Nano/Orin Nano/Orin NX; note the accuracy–throughput–power trade-off; input sizes reduced (e.g., 320×320) for TPU constraints; PyTorch→TensorRT optimization for Jetson. A syringe-volume-detection paper uses YOLOv8 on Jetson Orin Nano 8GB with quantization-aware training.
+Sources: arXiv benchmarking (2024); LearnOpenCV; Springer (syringe detection, 2025); PubMed (YOLOv8l/RT-DETR energy efficiency review)
+URLs: https://arxiv.org/html/2409.16808v1 ; https://learnopencv.com/yolo11-on-raspberry-pi/ ; https://link.springer.com/chapter/10.1007/978-3-031-86323-3_30 ; https://pubmed.ncbi.nlm.nih.gov/41896318/
+Why relevant: Directly informs onboard compute selection for a battery-electric mobile robot (power/accuracy/latency trade-offs), and shows medical-object (syringe) detection on Jetson is being done.
+Limitations: Some are vendor/tutorial blogs; one review is future-dated (Mar 2026) — verify. Benchmark numbers depend heavily on model/input-size/accelerator — read specifics.
