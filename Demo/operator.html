@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Operator Screen — Smart Waste Sorter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="brand">Smart Waste Sorter</span>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="operator.html">Operator screen</a>
+    </div>
+  </nav>
+
+  <div class="screen-wrap">
+    <div class="sorter-card">
+      <div class="sorter-header">
+        <span class="sorter-title">Bay 01</span>
+        <span class="sorter-status"><span class="status-dot"></span> Scanning</span>
+      </div>
+
+      <div class="camera-feed">
+        <span class="camera-label">cam 01</span>
+      </div>
+
+      <div class="item-card">
+        <div>
+          <div class="item-name">Used syringe</div>
+          <span class="item-tag">Sharps</span>
+        </div>
+        <span class="item-confidence">96%</span>
+      </div>
+
+      <div class="bins-grid">
+        <div class="bin-card">
+          <div class="bin-label">Anatomical</div>
+          <div class="bin-track"><div class="bin-fill" style="width:32%; background:#F4C430;"></div></div>
+        </div>
+        <div class="bin-card">
+          <div class="bin-label">Recyclable</div>
+          <div class="bin-track"><div class="bin-fill" style="width:54%; background:#E15554;"></div></div>
+        </div>
+        <div class="bin-card">
+          <div class="bin-label">Sharps</div>
+          <div class="bin-track"><div class="bin-fill" style="width:71%; background:#8FA1A8;"></div></div>
+        </div>
+        <div class="bin-card">
+          <div class="bin-label">Glass/metal</div>
+          <div class="bin-track"><div class="bin-fill" style="width:18%; background:#4C6EF5;"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
